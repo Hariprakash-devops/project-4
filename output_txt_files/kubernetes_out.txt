@@ -1,1 +1,11 @@
+pod/app2 created
+NAME   READY   STATUS              RESTARTS   AGE
+app2   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+Microsoft Windows [Version 10.0.19042.1110]
+(c) Microsoft Corporation. All rights reserved.
 
+PS C:\Users\Hariprakash\local_environment\project-4> kubectl port-forward pods/app2 8080:80
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
