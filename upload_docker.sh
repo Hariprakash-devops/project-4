@@ -5,14 +5,16 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=minorpatch/udacity-cloud-devops-p4
+dockerpath=hariprakashvk/devops1project-4
 
 # Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u minorpatch
-docker tag api $dockerpath
+winpty docker login -u hariprakashvk
+winpty docker tag api $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+winpty docker push $dockerpath
+
+cmd /k
